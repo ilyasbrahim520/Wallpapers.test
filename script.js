@@ -1,17 +1,24 @@
 const wallpapers = [
   {
-    url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80",
-    alt: "خلفية 1"
+    url: "images/tesla-model-s.jpeg",   // رابط الصورة
+    alt: "تيسلا موديل إس"               // اسم السيارة
   },
   {
-    url: "https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=500&q=80",
-    alt: "خلفية 2"
+    url: "images/ferrari-f8.jpeg",
+    alt: "فيراري إف 8"
   },
   {
-    url: "https://images.unsplash.com/photo-1495563381401-ecfbcaaa67bd?auto=format&fit=crop&w=500&q=80",
-    alt: "خلفية 3"
+    url: "images/bmw-m4.jpeg",
+    alt: "بي إم دبليو M4"
+  },
+  {
+    url: "images/audi-r8.jpeg",
+    alt: "أودي R8"
+  },
+  {
+    url: "images/mercedes-amg-gt.jpeg",
+    alt: "مرسيدس AMG GT"
   }
-  // أضف المزيد هنا
 ];
 
 const gallery = document.getElementById("wallpaperGallery");
