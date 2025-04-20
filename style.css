@@ -4,12 +4,23 @@ body {
   background-color: #f2f2f2;
   text-align: center;
   color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
 }
 
 header {
   background-color: #007bff;
   color: white;
   padding: 20px 10px;
+}
+
+body.dark header {
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
 header h1 {
@@ -20,6 +31,23 @@ header h1 {
 header p {
   margin: 5px 0 0;
   font-size: 14px;
+}
+
+#toggleMode {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark #toggleMode {
+  background-color: #333;
+  color: #eee;
 }
 
 .gallery-container {
@@ -41,6 +69,10 @@ header p {
   background-color: white;
 }
 
+body.dark .wallpaper {
+  background-color: #1e1e1e;
+}
+
 .wallpaper:hover {
   transform: scale(1.05);
 }
@@ -54,4 +86,10 @@ footer {
   background-color: #eee;
   padding: 15px;
   font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark footer {
+  background-color: #1f1f1f;
+  color: #ccc;
 }
