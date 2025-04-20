@@ -1,11 +1,23 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
+/* خلفية ثابتة تغطي الشاشة */
+.background-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  filter: brightness(0.5); /* اختياري: لتعتيم الخلفية */
+}
+
+/* باقي التنسيقات */
+body {
+  margin: 0;
+  font-family: sans-serif;
   text-align: center;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
