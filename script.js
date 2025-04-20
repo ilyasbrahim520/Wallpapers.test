@@ -40,13 +40,18 @@ wallpapers.forEach(wallpaper => {
 // Toggle between light and dark mode
 const toggleButton = document.getElementById("toggleMode");
 
+// تعيين الوضع الفاتح افتراضيًا إذا لم يكن الوضع الداكن مفعلًا
+if (!document.body.classList.contains("dark")) {
+  document.body.classList.add("light");
+  toggleButton.textContent = "Dark Mode";
+}
+
+// تبديل الوضعين معًا
 toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("dark");
+  document.body.classList.toggle("light");
 
-  // Change button text based on current mode
-  if (document.body.classList.contains("dark")) {
-    toggleButton.textContent = "Light Mode";
-  } else {
-    toggleButton.textContent = "Dark Mode";
-  }
+  toggleButton.textContent = document.body.classList.contains("dark")
+    ? "Light Mode"
+    : "Dark Mode";
 });
