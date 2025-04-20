@@ -28,6 +28,7 @@ const wallpapers = [
 
 const gallery = document.getElementById("wallpaperGallery");
 
+// إنشاء عناصر الصور المصغرة
 wallpapers.forEach(wallpaper => {
   const a = document.createElement("a");
   a.href = wallpaper.full;
@@ -43,15 +44,22 @@ wallpapers.forEach(wallpaper => {
   gallery.appendChild(a);
 });
 
-// Toggle between light and dark mode
 const toggleButton = document.getElementById("toggleMode");
 
-toggleButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+// تعيين الوضع الافتراضي إلى Light
+document.body.classList.add("light");
 
+// تبديل الوضع عند الضغط على الزر
+toggleButton.addEventListener("click", () => {
   if (document.body.classList.contains("dark")) {
-    toggleButton.textContent = "Light Mode";
-  } else {
+    // إلى Light Mode
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
     toggleButton.textContent = "Dark Mode";
+  } else {
+    // إلى Dark Mode
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    toggleButton.textContent = "Light Mode";
   }
 });
