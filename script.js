@@ -1,7 +1,7 @@
 const wallpapers = [
   {
-    url: "images/tesla-model-s.jpeg",   // رابط الصورة
-    alt: "تيسلا موديل إس"               // اسم السيارة
+    url: "images/tesla-model-s.jpeg",
+    alt: "تيسلا موديل إس"
   },
   {
     url: "images/ferrari-f8.jpeg",
@@ -35,4 +35,11 @@ wallpapers.forEach(wallpaper => {
 
   a.appendChild(img);
   gallery.appendChild(a);
+});
+
+// زر التبديل بين الوضع الفاتح والداكن
+const toggleButton = document.getElementById("toggleMode");
+
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
 });
