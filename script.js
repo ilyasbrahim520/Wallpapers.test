@@ -1,23 +1,23 @@
 const wallpapers = [
   {
     url: "images/tesla-model-s.jpeg",
-    alt: "تيسلا موديل إس"
+    alt: "Tesla Model S"
   },
   {
     url: "images/ferrari-f8.jpeg",
-    alt: "فيراري إف 8"
+    alt: "Ferrari F8"
   },
   {
     url: "images/bmw-m4.jpeg",
-    alt: "بي إم دبليو M4"
+    alt: "BMW M4"
   },
   {
     url: "images/audi-r8.jpeg",
-    alt: "أودي R8"
+    alt: "Audi R8"
   },
   {
     url: "images/mercedes-amg-gt.jpeg",
-    alt: "مرسيدس AMG GT"
+    alt: "Mercedes AMG GT"
   }
 ];
 
@@ -37,9 +37,16 @@ wallpapers.forEach(wallpaper => {
   gallery.appendChild(a);
 });
 
-// زر التبديل بين الوضع الفاتح والداكن
+// Toggle between light and dark mode
 const toggleButton = document.getElementById("toggleMode");
 
 toggleButton.addEventListener("click", () => {
   document.body.classList.toggle("dark");
+
+  // Change button text based on current mode
+  if (document.body.classList.contains("dark")) {
+    toggleButton.textContent = "Light Mode";
+  } else {
+    toggleButton.textContent = "Dark Mode";
+  }
 });
