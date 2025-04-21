@@ -1,5 +1,4 @@
-/* خلفية ثابتة تغطي الشاشة */
-body {
+/* خلفية ثابتة تغطي الشاشة */body {
   margin: 0;
   font-family: sans-serif;
   text-align: center;
@@ -160,8 +159,32 @@ body.dark footer {
   }
 }
 
+/* تنسيقات خاصة بوضع العرض الأفقي للجوال */
+@media screen and (orientation: landscape) and (max-width: 850px) {
+  header h1 {
+    font-size: 18px;
+  }
 
-body.dark footer {
-  background-color: #1f1f1f;
-  color: #ccc;
+  header p {
+    font-size: 12px;
+  }
+
+  #toggleMode {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .wallpaper {
+    width: 120px;
+  }
+
+  .gallery-container {
+    gap: 15px;
+    padding: 15px 8px;
+  }
+
+  footer {
+    font-size: 11px;
+    padding: 8px;
+  }
 }
