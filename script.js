@@ -38,6 +38,7 @@ wallpapers.forEach(wallpaper => {
   const img = document.createElement("img");
   img.src = wallpaper.thumb;
   img.alt = wallpaper.alt;
+  img.title = wallpaper.alt; // هذا السطر تمت إضافته لتحسين SEO
   img.loading = "lazy";
 
   a.appendChild(img);
