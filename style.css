@@ -1,9 +1,13 @@
-/* خلفية ثابتة تغطي الشاشة */body {
+/* خلفية ثابتة تغطي الشاشة */
+body {
   margin: 0;
   font-family: sans-serif;
   text-align: center;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* خلفية ثابتة للوضع الفاتح */
@@ -120,6 +124,42 @@ footer {
   font-size: 14px;
   transition: background-color 0.3s, color 0.3s;
 }
+
+body.dark footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
+
+/* تحسين تجربة الهاتف */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header p {
+    font-size: 13px;
+  }
+
+  #toggleMode {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .wallpaper {
+    width: 140px;
+  }
+
+  .gallery-container {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
 
 body.dark footer {
   background-color: #1f1f1f;
