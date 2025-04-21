@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- تحسين عرض الصفحة على الهواتف -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <title>iPhone Wallpapers</title>
-  
+
   <!-- أيقونة الموقع -->
   <link rel="icon" href="images/w.jpg" type="image/jpeg">
-  
+
   <!-- ملف التنسيق -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,20 +18,25 @@
   <!-- خلفية ثابتة توضع أسفل كل المحتوى -->
   <div class="background-fixed"></div>
 
+  <!-- رأس الصفحة -->
   <header>
     <h1>iPhone Wallpapers</h1>
     <p>Click a wallpaper to download</p>
     <button id="toggleMode">Dark Mode</button>
   </header>
 
+  <!-- معرض الخلفيات -->
   <main class="gallery-container" id="wallpaperGallery">
     <!-- Wallpapers are added via JavaScript -->
   </main>
 
+  <!-- تذييل الصفحة -->
   <footer>
     <p>© 2025 - All rights reserved</p>
   </footer>
 
+  <!-- ملف الجافاسكربت -->
   <script src="script.js"></script>
 </body>
 </html>
+
