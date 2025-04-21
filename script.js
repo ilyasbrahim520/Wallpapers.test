@@ -46,20 +46,38 @@ wallpapers.forEach(wallpaper => {
 
 const toggleButton = document.getElementById("toggleMode");
 
-// تعيين الوضع الافتراضي إلى Light
-document.body.classList.add("light");
+// الوضع الافتراضي بناءً على تفضيل المستخدم (اختياري)
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.body.classList.add("dark");
+  toggleButton.textContent = "Light Mode";
+} else {
+  document.body.classList.add("light");
+  toggleButton.textContent = "Dark Mode";
+}
 
 // تبديل الوضع عند الضغط على الزر
 toggleButton.addEventListener("click", () => {
   if (document.body.classList.contains("dark")) {
-    // إلى Light Mode
     document.body.classList.remove("dark");
     document.body.classList.add("light");
     toggleButton.textContent = "Dark Mode";
   } else {
-    // إلى Dark Mode
     document.body.classList.remove("light");
     document.body.classList.add("dark");
     toggleButton.textContent = "Light Mode";
   }
+});
+
+// إخفاء زر الوضع عند التمرير لأسفل وإظهاره عند التمرير لأعلى
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+  if (currentScroll > lastScroll && currentScroll > 50) {
+    toggleButton.style.opacity = "0";
+    toggleButton.style.pointerEvents = "none";
+  } else {
+    toggleButton.style.opacity = "1";
+    toggleButton.style.pointerEvents = "auto";
+  }
+  lastScroll = currentScroll;
 });
