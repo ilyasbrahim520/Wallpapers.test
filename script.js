@@ -2,27 +2,27 @@ const wallpapers = [
   {
     thumb: "images/pagani-zonda-r-thumb.jpeg",
     full: "images/pagani-zonda-r.jpeg",
-    alt: "Pagani Zonda R"
+    alt: "Pagani Zonda R - by W-ilyas"
   },
   {
     thumb: "images/porsche-911-front-thumb.jpeg",
     full: "images/porsche-911-front.jpeg",
-    alt: "Sweet Porsche 911 front side"
+    alt: "Sweet Porsche 911 front side - by W-ilyas"
   },
   {
     thumb: "images/supertrofeo-evo2-thumb.jpeg",
     full: "images/supertrofeo-evo2.jpeg",
-    alt: "Candy SuperTrofeo EVO2"
+    alt: "Candy SuperTrofeo EVO2 - by W-ilyas"
   },
   {
     thumb: "images/porsche-911-left-thumb.jpeg",
     full: "images/porsche-911-left.jpeg",
-    alt: "Sweet Porsche 911 left side"
+    alt: "Sweet Porsche 911 left side - by W-ilyas"
   },
   {
     thumb: "images/koenigsegg-agera-rs-thumb.jpeg",
     full: "images/koenigsegg-agera-rs.jpeg",
-    alt: "Koenigsegg Agera RS"
+    alt: "Koenigsegg Agera RS - by W-ilyas"
   }
 ];
 
@@ -38,7 +38,7 @@ wallpapers.forEach(wallpaper => {
   const img = document.createElement("img");
   img.src = wallpaper.thumb;
   img.alt = wallpaper.alt;
-  img.title = wallpaper.alt; // هذا السطر تمت إضافته لتحسين SEO
+  img.title = wallpaper.alt; // تحسين SEO
   img.loading = "lazy";
 
   a.appendChild(img);
