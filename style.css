@@ -1,4 +1,4 @@
-/* خلفية ثابتة تغطي الشاشة */body {
+/* خلفية ثابتة تغطي الشاشة */body {{
   margin: 0;
   font-family: sans-serif;
   text-align: center;
@@ -134,6 +134,10 @@ footer {
   padding: 15px;
   font-size: 14px;
   transition: background-color 0.3s, color 0.3s;
+}
+
+footer p strong {
+  font-weight: bold;
 }
 
 body.dark footer {
