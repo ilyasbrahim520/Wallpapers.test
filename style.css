@@ -1,4 +1,4 @@
-/* خلفية ثابتة تغطي الشاشة */body {
+{
   margin: 0;
   font-family: sans-serif;
   text-align: center;
@@ -62,11 +62,12 @@ header p {
   margin-top: 8px;
   font-size: 13px;
   color: #ddd;
-  font-style: italic;
+  font-style: normal; /* إزالة الخط المائل */
+  font-weight: bold;  /* جعل الخط بولد */
 }
 
 body.light .brand {
-  color: #333;
+  color: #111; /* لون أغمق في الوضع الفاتح */
 }
 
 #toggleMode {
