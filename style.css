@@ -9,12 +9,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* خلفية ثابتة للوضع الفاتح */
+‎/* خلفية ثابتة للوضع الفاتح */
 body.light .background-fixed {
   background-image: url("images/light-background.jpg");
 }
 
-/* خلفية ثابتة للوضع الداكن */
+‎/* خلفية ثابتة للوضع الداكن */
 body.dark .background-fixed {
   background-image: url("images/background.jpg");
 }
@@ -57,17 +57,16 @@ header p {
   font-size: 14px;
 }
 
-/* تنسيق الشعار */
+‎/* تنسيق الشعار */
 .brand {
   margin-top: 8px;
   font-size: 13px;
   color: #ddd;
-  font-style: normal; /* إزالة الخط المائل */
-  font-weight: bold;  /* جعل الخط بولد */
+  font-style: italic;
 }
 
 body.light .brand {
-  color: #111; /* لون أغمق في الوضع الفاتح */
+  color: #333;
 }
 
 #toggleMode {
@@ -146,7 +145,7 @@ body.dark footer {
   color: #ccc;
 }
 
-/* تحسين تجربة الهاتف */
+‎/* تحسين تجربة الهاتف */
 @media (max-width: 600px) {
   header h1 {
     font-size: 20px;
@@ -180,7 +179,7 @@ body.dark footer {
   }
 }
 
-/* تنسيقات خاصة بوضع العرض الأفقي للجوال */
+‎/* تنسيقات خاصة بوضع العرض الأفقي للجوال */
 @media screen and (orientation: landscape) and (max-width: 850px) {
   header h1 {
     font-size: 18px;
