@@ -82,10 +82,3 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
-
-// إضافة الشعار داخل رأس الصفحة
-const header = document.querySelector("header");
-const brandText = document.createElement("p");
-brandText.textContent = "Wallpapers by W-ilyas";
-brandText.className = "brand";
-header.appendChild(brandText);
