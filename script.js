@@ -23,6 +23,31 @@ const wallpapers = [
     thumb: "images/koenigsegg-agera-rs-thumb.jpeg",
     full: "images/koenigsegg-agera-rs.jpeg",
     alt: "Koenigsegg Agera RS - by W-ilyas"
+  },
+  {
+    thumb: "images/lamborghini-svj-front-thumb.jpeg",
+    full: "images/lamborghini-svj-front.jpeg",
+    alt: "White Lamborghini SVJ front side"
+  },
+  {
+    thumb: "images/lamborghini-svj-back-thumb.jpeg",
+    full: "images/lamborghini-svj-back.jpeg",
+    alt: "White Lamborghini SVJ back side"
+  },
+  {
+    thumb: "images/pagani-zonda-r-back-thumb.jpeg",
+    full: "images/pagani-zonda-r-back.jpeg",
+    alt: "Pagani Zonda R back side"
+  },
+  {
+    thumb: "images/bmw-m4-green-thumb.jpeg",
+    full: "images/bmw-m4-green.jpeg",
+    alt: "Green BMW M4"
+  },
+  {
+    thumb: "images/bmw-m4-yellow-thumb.jpeg",
+    full: "images/bmw-m4-yellow.jpeg",
+    alt: "Yellow BMW M4"
   }
 ];
 
