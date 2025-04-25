@@ -10,29 +10,6 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* خلفية ثابتة للوضع الفاتح */
-body.light .background-fixed {
-  background-image: url("images/light-background.jpg");
-}
-
-/* خلفية ثابتة للوضع الداكن */
-body.dark .background-fixed {
-  background-image: url("images/background.jpg");
-}
-
-.background-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
 header {
   margin-top: 0;
   background-color: rgba(0, 0, 0, 0.5);
