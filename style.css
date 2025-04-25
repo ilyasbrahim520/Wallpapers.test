@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Segoe UI", sans-serif;
   text-align: center;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
@@ -93,6 +93,7 @@ body.dark #toggleMode:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   background-color: white;
+  text-align: center;
 }
 
 body.dark .wallpaper {
