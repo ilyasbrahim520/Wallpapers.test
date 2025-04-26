@@ -8,7 +8,6 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden; /* مهم لمنع أي تحرك عرضي */
 }
 
 /* خلفية ثابتة للوضع الفاتح */
@@ -25,10 +24,10 @@ body.dark .background-fixed {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-size: contain;
-  background-position: top center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
