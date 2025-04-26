@@ -12,12 +12,12 @@ body {
 
 /* خلفية ثابتة للوضع الفاتح */
 body.light .background-fixed {
-  background-image: url("images/light-background.jpg");
+  background-image: url("images/light-background.svg");
 }
 
 /* خلفية ثابتة للوضع الداكن */
 body.dark .background-fixed {
-  background-image: url("images/background.jpg");
+  background-image: url("images/background.svg");
 }
 
 .background-fixed {
