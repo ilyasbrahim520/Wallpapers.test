@@ -109,17 +109,3 @@ toggleButton.addEventListener("click", () => {
     toggleButton.textContent = "Light Mode";
   }
 });
-
-// إخفاء زر الوضع عند التمرير لأسفل وإظهاره عند التمرير لأعلى
-let lastScroll = 0;
-window.addEventListener("scroll", () => {
-  const currentScroll = window.scrollY;
-  if (currentScroll > lastScroll && currentScroll > 50) {
-    toggleButton.style.opacity = "0";
-    toggleButton.style.pointerEvents = "none";
-  } else {
-    toggleButton.style.opacity = "1";
-    toggleButton.style.pointerEvents = "auto";
-  }
-  lastScroll = currentScroll;
-});
