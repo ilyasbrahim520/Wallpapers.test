@@ -48,6 +48,22 @@ const wallpapers = [
     thumb: "images/bmw-m4-yellow-thumb.jpeg",
     full: "images/bmw-m4-yellow.jpeg",
     alt: "Yellow BMW M4"
+  },
+  {
+    thumb: "images/slice-orange-purple-thumb.jpeg",
+    full: "images/slice-orange-purple.jpeg",
+    alt: "Orange&Purple Slice"
+  },
+  {
+    thumb: "images/slice-blue-green-thumb.jpeg",
+    full: "images/slice-blue-green.jpeg",
+    alt: "Blue&Green Slice"
+
+  },
+  {
+    thumb: "images/black-mercedes-thumb.jpeg",
+    full: "images/black-mercedes.jpeg",
+    alt: "Black Mercedes"
   }
 ];
 
