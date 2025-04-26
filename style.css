@@ -24,13 +24,21 @@ body.dark .background-fixed {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: contain;
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
+}
+
+/* عندما يكون العرض أكبر من الارتفاع (وضع أفقي landscape) */
+@media (orientation: landscape) {
+  .background-fixed {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 header {
