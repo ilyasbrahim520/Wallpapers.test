@@ -11,7 +11,7 @@ body {
   overflow-x: hidden; /* مهم لمنع أي تحرك عرضي */
 }
 
-/* خلفية ثابتة للوضع الفاتح *//* خلفية ثابتة للوضع الفاتح */
+/* خلفية ثابتة للوضع الفاتح */
 body.light .background-fixed {
   background-image: url("backgrounds/backgrounds-light-pink-big.svg");
 }
@@ -26,8 +26,7 @@ body.dark .background-fixed {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  min-height: 100%;
+  height: calc(var(--vh, 1vh) * 100);
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
@@ -38,8 +37,8 @@ body.dark .background-fixed {
 /* وضع landscape فقط */
 @media (orientation: landscape) {
   .background-fixed {
-    background-position: top center; /* اجبره يبقى في الأعلى */
-    background-size: 100% auto; /* نركز على العرض فقط */
+    background-position: top center;
+    background-size: 100% auto;
   }
 }
 
