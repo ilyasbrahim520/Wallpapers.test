@@ -64,6 +64,36 @@ const wallpapers = [
     thumb: "images/black-mercedes-thumb.jpeg",
     full: "images/black-mercedes.jpeg",
     alt: "Black Mercedes"
+
+  },
+  {
+    thumb: "images/black-bmw-m8-thumb.jpeg",
+    full: "images/black-bmw-m8.jpeg",
+    alt: "Black Bmw M8"
+
+  },
+  {
+    thumb: "images/m2-white-thumb.jpeg",
+    full: "images/m2-white.jpeg",
+    alt: "White Bmw M2"
+
+  },
+  {
+    thumb: "images/black-bmw-m3-thumb.jpeg",
+    full: "images/black-bmw-m3.jpeg",
+    alt: "Black Bmw M3"
+
+  },
+  {
+    thumb: "images/gray-porsche-back-side-thumb.jpeg",
+    full: "images/gray-porsche-back-side.jpeg",
+    alt: "Gray Porsche From The Back Side"
+
+  },
+  {
+    thumb: "images/gray-porsche-angel-side-thumb.jpeg",
+    full: "images/gray-porsche-angel-side.jpeg",
+    alt: "Gray Porsche From The angel Side"
   }
 ];
 
