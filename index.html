@@ -55,27 +55,7 @@
     <p>© 2025 - All rights reserved. Wallpapers by <strong>W-ilyas</strong></p>
   </footer>
 
-  <!-- ملف الجافاسكربت للموقع -->
+  <!-- فقط استدعاء جافاسكربت الرئيسي الخاص بالموقع -->
   <script src="script.js"></script>
-
-  <!-- كود ضبط الخلفية مع تغيير الحجم أو التدوير -->
-  <script>
-    function adjustBackground() {
-      const bg = document.querySelector('.background-fixed');
-      if (window.innerWidth > window.innerHeight) {
-        // وضع العرض (landscape)
-        bg.style.backgroundSize = "cover";
-        bg.style.backgroundPosition = "center center";
-      } else {
-        // وضع الطول (portrait)
-        bg.style.backgroundSize = "contain";
-        bg.style.backgroundPosition = "top center";
-      }
-    }
-
-    window.addEventListener('load', adjustBackground);
-    window.addEventListener('resize', adjustBackground);
-    window.addEventListener('orientationchange', adjustBackground);
-  </script>
 </body>
 </html>
