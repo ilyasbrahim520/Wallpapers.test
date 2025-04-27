@@ -11,14 +11,14 @@ body {
   overflow-x: hidden; /* مهم لمنع أي تحرك عرضي */
 }
 
-/* خلفية ثابتة للوضع الفاتح */
+/* خلفية ثابتة للوضع الفاتح *//* خلفية ثابتة للوضع الفاتح */
 body.light .background-fixed {
-  background-image: url("backgrounds/background-pink-big.svg");
+  background-image: url("backgrounds/backgrounds-light-pink-big.svg");
 }
 
 /* خلفية ثابتة للوضع الداكن */
 body.dark .background-fixed {
-  background-image: url("backgrounds/background-pink.svg");
+  background-image: url("backgrounds/background-pink-big.svg");
 }
 
 .background-fixed {
