@@ -35,6 +35,14 @@ body.dark .background-fixed {
   z-index: -1;
 }
 
+/* وضع landscape فقط */
+@media (orientation: landscape) {
+  .background-fixed {
+    background-position: top center; /* اجبره يبقى في الأعلى */
+    background-size: 100% auto; /* نركز على العرض فقط */
+  }
+}
+
 header {
   margin-top: 0;
   background-color: rgba(0, 0, 0, 0.5);
