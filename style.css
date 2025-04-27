@@ -17,7 +17,7 @@ body.light .background-fixed {
 
 /* خلفية ثابتة للوضع الداكن */
 body.dark .background-fixed {
-  background-image: url("backgrounds/background-pink-full.svg");
+  background-image: url("backgrounds/background-pink-full-big.svg");
 }
 
 .background-fixed {
