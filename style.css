@@ -8,6 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden; /* مهم لمنع أي تحرك عرضي */
 }
 
 /* خلفية ثابتة للوضع الفاتح */
@@ -17,28 +18,21 @@ body.light .background-fixed {
 
 /* خلفية ثابتة للوضع الداكن */
 body.dark .background-fixed {
-  background-image: url("backgrounds/background-pink-full-big.svg");
+  background-image: url("backgrounds/background-pink-big.svg");
 }
 
 .background-fixed {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
+  width: 100%;
+  height: auto;
   min-height: 100%;
-  background-size: contain;
+  background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: -1;
-}
-
-/* عندما يكون العرض أكبر من الارتفاع (وضع أفقي landscape) */
-@media (orientation: landscape) {
-  .background-fixed {
-    background-size: cover;
-    background-position: center center;
-  }
 }
 
 header {
