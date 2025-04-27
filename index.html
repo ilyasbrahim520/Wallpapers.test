@@ -55,7 +55,18 @@
     <p>© 2025 - All rights reserved. Wallpapers by <strong>W-ilyas</strong></p>
   </footer>
 
-  <!-- فقط استدعاء جافاسكربت الرئيسي الخاص بالموقع -->
+  <!-- ملف الجافاسكربت الخاص بالموقع -->
   <script src="script.js"></script>
+
+  <!-- كود تثبيت وحدة الطول vh بشكل صحيح -->
+  <script>
+    function setVh() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    window.addEventListener('resize', setVh);
+    window.addEventListener('orientationchange', setVh);
+    window.addEventListener('load', setVh);
+  </script>
 </body>
 </html>
