@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  
-  <meta name="description" content="Choose between PC and iPhone high-quality wallpapers by W-ilyas.">
-  <meta name="keywords" content="Wallpapers, PC Wallpapers, iPhone Wallpapers, High Quality Backgrounds, W-ilyas">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Explore a wide variety of high-quality wallpapers for both PC and iPhone — including cars, anime, nature, and more — by W-ilyas.">
+  <meta name="keywords" content="Wallpapers, PC Wallpapers, iPhone Wallpapers, High Quality Backgrounds, Cars, Anime, Nature, 4K Wallpapers, W-ilyas">
+  <meta name="robots" content="index, follow" />
   <meta name="google-site-verification" content="G3MXEijPY7KZc0K0F3AnhlmBd53-gVh9QkObNiRVlEw" />
 
-  <title>Wallpapers by W-ilyas</title>
+  <title>Wallpapers by W-ilyas | HD Wallpapers for PC & iPhone</title>
 
-  <!-- أيقونة الموقع -->
-  <link rel="icon" href="images/w.png" type="image/png">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-  <!-- وسوم Open Graph لتحسين الظهور في المشاركة الاجتماعية -->
+  <!-- Open Graph Meta -->
   <meta property="og:title" content="Wallpapers by W-ilyas">
-  <meta property="og:description" content="Choose and download beautiful wallpapers for your PC or iPhone by W-ilyas.">
+  <meta property="og:description" content="Download stunning wallpapers for iPhone and PC — from cars to anime and beyond.">
   <meta property="og:image" content="https://ilyasbrahim520.github.io/Wallpapers.test/images/w.png">
   <meta property="og:url" content="https://ilyasbrahim520.github.io/Wallpapers.test/">
   <meta property="og:type" content="website">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container">
-  <div class="welcome-box">
-    <img src="images/home.svg" alt="Home Icon">
-    <div class="divider"></div>
-    <h1>Welcome to Wallpapers by W-ilyas</h1>
+  <!-- الخلفيات المتحركة والخلفية العامة -->
+  <div class="gradient-background">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+    <div class="glow"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+    <div class="particles-container" id="particles-container"></div>
   </div>
-  <p>Select your device:</p>
 
-  <div class="buttons">
-    <a href="pc/index.html" class="btn">
-      <img src="images/pc.svg" alt="PC Icon">
-      PC Wallpapers
-    </a>
-    <a href="iphone/index.html" class="btn">
-      <img src="images/phone.svg" alt="Phone Icon">
-      iPhone Wallpapers
-    </a>
-  </div>
-</div>
+  <!-- الشريط العلوي -->
+  <header id="main-header">
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Site Logo" class="site-logo" />
+      <span class="site-name">𝙒-𝙞𝙡𝙮𝙖𝙨</span>
+    </div>
 
-  <footer>
-    <p>© 2025 - All rights reserved. Wallpapers by <strong>W-ilyas</strong></p>
-  </footer>
+    <!-- زر الوضع الداكن / الفاتح -->
+    <button id="toggle-mode">
+      <img src="images/moon.svg" alt="Toggle Dark Mode" class="mode-icon" />
+      <span>Switch Mode</span>
+    </button>
+  </header>
 
+  <!-- قسم البطل -->
+  <section class="hero-section">
+    <div class="content-container">
+      <h1>WALLPAPERS BY W-ilyas</h1>
+      <p>WELCOME, Explore a stunning collection of high-quality wallpapers for both desktop and phone, free images to personalize your device.</p>
+
+      <!-- أزرار التصفح -->
+      <div id="wallpaper-buttons">
+        <button id="browse-btn" class="btn">Browse wallpapers</button>
+        <div id="choice-buttons">
+          <a href="pc/index.html" class="btn">PC Wallpapers</a>
+          <a href="iphone/index.html" class="btn">Phone Wallpapers</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- صورة الهاتف -->
+    <div class="image-container">
+      <img src="images/phone-preview.png" alt="Wallpaper Preview" />
+    </div>
+  </section>
+
+  <!-- السكريبتات -->
+  <script src="script.js"></script>
 </body>
 </html>
