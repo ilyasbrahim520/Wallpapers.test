@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+  overflow: hidden;
+}
+
 body {
     font-family: 'Inter', 'Helvetica Neue', sans-serif;
     overflow: hidden;
