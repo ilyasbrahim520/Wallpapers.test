@@ -13,15 +13,12 @@ html, body {
 }
 
 body {
-    font-family: 'Inter', 'Helvetica Neue', sans-serif;
-    overflow: hidden;
-    margin: 0;
-    background-color: #050505;
-    color: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  background-color: #050505;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* المحتوى */
