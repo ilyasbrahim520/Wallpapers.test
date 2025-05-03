@@ -23,7 +23,7 @@ body {
     text-align: center;
     max-width: 800px;
     padding: 2rem;
-    margin-top: -50px;
+    margin-top: 75px;
 }
 
 .content-container * {
@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.1rem;
     font-weight: 800;
     margin-bottom: 1rem; /* تقليل المسافة */
     background: linear-gradient(to right, #fff, #acacac);
@@ -43,7 +43,7 @@ h1 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     line-height: 1.6;
     margin-top: 0.5rem; /* ضمان وجود مسافة واضحة */
     margin-bottom: 2rem;
@@ -405,7 +405,6 @@ body.light-mode #toggle-mode:hover {
     max-width: 1400px;
     width: 100%;
     padding: 2rem;
-    margin-top: 100px;
     position: relative;
     z-index: 10;
 }
@@ -421,10 +420,11 @@ body.light-mode #toggle-mode:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 .image-container img {
-    max-width: 90%;
-    height: auto;
+    max-width: 70%;
+    height:  auto;
     filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.1));
 }
