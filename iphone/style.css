@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0D1217;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='956' height='114.7' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23717171' stroke-width='3.3' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: auto; /* أو 50% auto لتصغيرها أكثر */
+  color: #fff;
+}
+
+.SVGBG-line-height {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000"><path d="M12 7h9c.55 0 1-.45 1-1s-.45-1-1-1h-9c-.55 0-1 .45-1 1s.45 1 1 1ZM21 11h-9c-.55 0-1 .45-1 1s.45 1 1 1h9c.55 0 1-.45 1-1s-.45-1-1-1ZM21 17h-9c-.55 0-1 .45-1 1s.45 1 1 1h9c.55 0 1-.45 1-1s-.45-1-1-1ZM8.29 8.71c.2.2.45.29.71.29s.51-.1.71-.29a.99.99 0 0 0 0-1.41l-3-3a.99.99 0 0 0-1.41 0l-3 3a.99.99 0 1 0 1.41 1.41L5 7.42v9.17L3.71 15.3a.99.99 0 1 0-1.41 1.41l3 3c.2.2.45.29.71.29s.51-.1.71-.29l3-3a.99.99 0 1 0-1.41-1.41l-1.29 1.29V7.41L8.31 8.7Z"/></svg>');
+}
+
+i[class^=SVGBG-] {
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  display: inline-block;
+}
+
+header {
+  background-color: #030409;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #3B444F;
+}
+
+.header-box {
+  background-color: white;
+  color: #0D1217;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  gap: 16px;
+  border: 3px solid #3B444F;
+}
+
+.header-box i[class^=SVGBG-] {
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+}
+
+.header-box .divider {
+  width: 2px;
+  height: 30px;
+  background-color: #ccc;
+}
+
+.header-box h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #0D1217; /* نفس لون الهيدر */
+  color: white;
+  font-weight: bold;
+  border-top: 3px solid #3B444F; /* خط بنفسجي علوي */
+  text-shadow: 0 0 6px rgba(75, 0, 110, 0.5); /* توهج بنفسجي خفيف */
+  margin-top: 40px;
+}
+
+.type-gallery {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 350px; /* أو أي قيمة تراها مناسبة حسب التصميم */
+  margin: 0 auto;   /* لتوسيطه في المنتصف */
+}
+
+.type-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border: 2px solid #4b006e;            /* بنفسجي غامق للإطار */
+  border-radius: 16px;
+  background-color: rgba(75, 0, 110, 0.15); /* بنفسجي زجاجي */
+  backdrop-filter: blur(6px);           /* تأثير الزجاج */
+  -webkit-backdrop-filter: blur(6px);   /* دعم للـ Safari */
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+}
+
+.row-top {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.row-bottom {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.type-label {
+  background-color: #4b006e;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border: 4px solid #0D1217;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.row img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 2px solid #3B444F;
+  border-radius: 12px;
+}
+
+.open-btn {
+  background-color: #0D1217;
+  color: #4b006e;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 24px;
+  border: 5px solid #4b006e;
+}
