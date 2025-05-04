@@ -13,6 +13,12 @@ const wallpapers = [
     thumb: "../../images/soft-purple-mountains-thumb.jpg",
     full: "../../images/soft-purple-mountains.jpg",
     alt: "Soft Purple Mountains Wallpaper - by W-ilyas"
+
+  },
+  {
+    thumb: "../../images/smooth-circles-thumb.jpg",
+    full: "../../images/smooth-circles.jpg",
+    alt: "Smooth Circles Wallpaper - by W-ilyas"
   }
 ];
 
