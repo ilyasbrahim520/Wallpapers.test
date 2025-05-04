@@ -78,6 +78,12 @@ const wallpapers = [
     thumb: "../../images/gray-porsche-angel-side-thumb.jpeg",
     full: "../../images/gray-porsche-angel-side.jpeg",
     alt: "../../Gray Porsche From The angel Side"
+
+  },
+  {
+    thumb: "../../images/supra-yellow-mk5-thumb.jpg",
+    full: "../../images/supra-yellow-mk5.jpg",
+    alt: "Yellow Supra Mk5 Wallpaper - by W-ilyas"
   }
 ];
 
